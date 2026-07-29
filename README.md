@@ -24,11 +24,7 @@ A production-ready NestJS REST API for managing Todos with TypeORM and SQLite.
 
 ```bash
 # Clone the repository
-<<<<<<< HEAD
 git clone https://github.com/MohX3/todo-api.git
-=======
-git clone [<repository-url>](https://github.com/MohX3/todo-api.git)
->>>>>>> 11122a6044a7c9c61af879b7ab8e7b11c3536917
 cd t3
 
 # Install dependencies
