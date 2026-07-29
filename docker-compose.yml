@@ -1,0 +1,15 @@
+services:
+  app:
+    image: mohx31/todo-api:latest
+    container_name: todo-api
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - todo-data:/usr/src/app/data
+    restart: unless-stopped
+
+volumes:
+  todo-data:

@@ -1,0 +1,20 @@
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn } from 'typeorm';
+
+@Entity()
+export class Todo {
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column({ unique: true })
+  title: string;
+
+  @Column({ nullable: true })
+  description: string;
+
+  @Column({ default: false })
+  completed: boolean;
+
+  @CreateDateColumn()
+  createdAt: Date;
+
+}
