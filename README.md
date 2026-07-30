@@ -9,15 +9,15 @@ A production-ready NestJS REST API for managing Todos with TypeORM and SQLite.
 
 ## Prerequisites
 
-- **Node.js**: v20+
-- **npm**: v10+
-- **Docker**: v20+ with Docker Compose
+- **Node.js**
+- **npm**
+- **Docker**
 
 ## Environment Variables
 
-| Variable | Default | Description |
-| --- | --- | --- |
-| `PORT` | `3000` | Application listening port |
+| Variable     | Default         | Description                                                        |
+| ------------ | --------------- | ------------------------------------------------------------------ |
+| `PORT`     | `3000`        | Application listening port                                         |
 | `NODE_ENV` | `development` | Application runtime environment (`development` / `production`) |
 
 ## Installation
@@ -71,14 +71,14 @@ docker compose down
 
 ### Base URL: `http://localhost:3000`
 
-| Method | Endpoint | Description | Request Body Example |
-| --- | --- | --- | --- |
-| `POST` | `/todos` | Create a new todo | `{"title": "Buy groceries", "description": "Milk, Bread", "completed": false}` |
-| `GET` | `/todos` | List all todos | N/A |
-| `GET` | `/todos/stats` | Get todo statistics | N/A |
-| `GET` | `/todos/:id` | Get todo by ID | N/A |
-| `PATCH` | `/todos/:id` | Update todo | `{"completed": true}` |
-| `DELETE` | `/todos/:id` | Delete todo by ID | N/A |
+| Method     | Endpoint         | Description         | Request Body Example                                                             |
+| ---------- | ---------------- | ------------------- | -------------------------------------------------------------------------------- |
+| `POST`   | `/todos`       | Create a new todo   | `{"title": "Buy groceries", "description": "Milk, Bread", "completed": false}` |
+| `GET`    | `/todos`       | List all todos      | N/A                                                                              |
+| `GET`    | `/todos/stats` | Get todo statistics | N/A                                                                              |
+| `GET`    | `/todos/:id`   | Get todo by ID      | N/A                                                                              |
+| `PATCH`  | `/todos/:id`   | Update todo         | `{"completed": true}`                                                          |
+| `DELETE` | `/todos/:id`   | Delete todo by ID   | N/A                                                                              |
 
 ### Example Usage
 
